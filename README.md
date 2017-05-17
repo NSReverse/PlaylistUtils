@@ -1,11 +1,11 @@
 # PlaylistUtils
 A simple set of Classes to create and manage playlists on Android.
 
-###Placing into your project
+### Placing into your project
 1. Download or clone the git repo.
 2. In Android Studio, move or copy the 'mx' folder into the root of your 'java' folder.
 
-###Creating a playlist called "TestPlaylist" on Device
+### Creating a playlist called "TestPlaylist" on Device
 
 ```java
 PlaylistUtils utils = new PlaylistUtils(getApplicationContext());
@@ -15,7 +15,7 @@ boolean created = utils.createPlaylist("TestPlaylist");
 ...
 ```
 
-###Adding a PlaylistItem into "TestPlaylist"
+### Adding a PlaylistItem into "TestPlaylist"
 
 ```java
 PlaylistItem item = new PlaylistItem();
@@ -29,7 +29,7 @@ PlaylistUtils utils = new PlaylistUtils(getApplicationContext());
 utils.addToPlaylist("TestPlaylist", item);
 ```
 
-###Removing a PlaylistItem from "TestPlaylist"
+### Removing a PlaylistItem from "TestPlaylist"
 
 ```java
 PlaylistItem item = ...
@@ -40,14 +40,14 @@ boolean removed = utils.removeFromPlaylist("TestPlaylist", item);
 ...
 ```
 
-###Getting an existing playlist called "TestPlaylist"
+### Getting an existing playlist called "TestPlaylist"
 
 ```java
 PlaylistUtils utils = new PlaylistUtils(getApplicationContext());
 List<PlaylistItem> playlist = utils.getPlaylist("TestPlaylist");
 ```
 
-###Deleting an existing playlist called "TestPlaylist"
+### Deleting an existing playlist called "TestPlaylist"
 
 ```java
 PlaylistUtils utils = new PlaylistUtils(getApplicationContext());
@@ -56,12 +56,12 @@ boolean removed = utils.removePlaylist("TestPlaylist");
 ...
 ```
 
-###Getting all playlists in a Map
+### Getting all playlists in a Map
 
 ```java
 PlaylistUtils utils = new PlaylistUtils(getApplicationContext());
 Map<String, List<PlaylistItem>> playlists = utils.getAllPlaylists();
 ```
 
-###Things that I'm working on
+### Things that I'm working on
 1. Creating a method for the manager to set an entire list into a playlist. Mainly for reordering items.
