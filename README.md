@@ -1,3 +1,5 @@
+This is no longer being worked on. I am working on a solution to create a SQLite database wrapper to replace this.
+
 # PlaylistUtils
 A simple set of Classes to create and manage playlists on Android.
 
